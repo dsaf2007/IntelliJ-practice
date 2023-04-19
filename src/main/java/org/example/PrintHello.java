@@ -21,7 +21,11 @@ public class PrintHello {
         int asciiCode1 = inputStreamReader1.read();
         int asciiCode2 = inputStreamReader2.read();
 
-        System.out.println("asciiCode1 = " + asciiCode1);
-        System.out.println("asciiCode2 = " + asciiCode2);
+        //System.out.println("asciiCode1 = " + asciiCode1);
+        //System.out.println("asciiCode2 = " + asciiCode2);
+
+        BufferReaderEx br = new BufferReaderEx();
+
+        br.readALine();
     }
 }
