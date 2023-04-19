@@ -18,8 +18,8 @@ public class PrintHello {
         InputStreamReader inputStreamReader1 = new InputStreamReader(System.in);
         InputStreamReader inputStreamReader2 = new InputStreamReader(System.in);
 
-        int asciiCode1 = inputStreamReader1.read();
-        int asciiCode2 = inputStreamReader2.read();
+        //int asciiCode1 = inputStreamReader1.read();
+        //int asciiCode2 = inputStreamReader2.read();
 
         //System.out.println("asciiCode1 = " + asciiCode1);
         //System.out.println("asciiCode2 = " + asciiCode2);
