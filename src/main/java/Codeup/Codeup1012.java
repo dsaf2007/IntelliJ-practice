@@ -7,6 +7,6 @@ public class Codeup1012 {
         float f;
         Scanner sc = new Scanner(System.in);
         f = sc.nextFloat();
-        System.out.println(f);
+        System.out.printf("%.2f",f);
     }
 }
