@@ -4,17 +4,16 @@ import java.util.Scanner;
 
 public class ScannerEx {
 
-    private int val1;
-    private int val2;
+    private String val1;
+    private String val2;
 
-
-    public void readTwoNumbers() {
+    public void readTwoStrings() {
         Scanner sc = new Scanner(System.in);
-        this.val1 = sc.nextInt();
-        this.val2 = sc.nextInt();
+        this.val1 = sc.next();
+        this.val2 = sc.next();
     }
 
-    public int addTwoNumbers() {
+    public String addTwoStrings() {
         return this.val1 + this.val2;
     }
 }
