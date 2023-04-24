@@ -1,13 +1,13 @@
-package Codeup;
+package codeup;
 
 import java.util.Scanner;
 
-public class Codeup1011 {
+public class Codeup1010 {
     public static void main(String[] args) {
-        char c;
+        int n;
         Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
 
-        c = sc.next().charAt(0);
-        System.out.println(c);
+        System.out.println(n);
     }
 }

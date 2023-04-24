@@ -1,13 +1,12 @@
-package Codeup;
+package codeup;
 
 import java.util.Scanner;
 
-public class Codeup1010 {
+public class Codeup1012 {
     public static void main(String[] args) {
-        int n;
+        float f;
         Scanner sc = new Scanner(System.in);
-        n = sc.nextInt();
-
-        System.out.println(n);
+        f = sc.nextFloat();
+        System.out.printf("%.2f",f);
     }
 }

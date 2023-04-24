@@ -1,6 +1,5 @@
-package Codeup;
+package codeup;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Codeup1013 {
