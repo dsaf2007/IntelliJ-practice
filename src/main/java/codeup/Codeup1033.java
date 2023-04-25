@@ -2,12 +2,13 @@ package codeup;
 
 import java.util.Scanner;
 
-public class Codeup1030 {
+public class Codeup1033 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        long num1 = sc.nextLong();
+        String input = sc.nextLine();
 
-        System.out.println(num1);
+        int num = Integer.parseInt(input, 8);
+        System.out.println(num);
     }
 }
