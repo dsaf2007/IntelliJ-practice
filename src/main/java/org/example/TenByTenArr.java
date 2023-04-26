@@ -4,12 +4,23 @@ import java.util.Arrays;
 
 public class TenByTenArr {
 
-    public static void main(String[] args) {
-        int[][] arr10x10 = new int[10][10];
+    public static void printArray(int[][] arr) {
+        System.out.println(Arrays.toString(arr[0]));
+        System.out.println(Arrays.toString(arr[1]));
+        System.out.println(Arrays.toString(arr[2]));
+        System.out.println("----------");
+    }
 
-        for(int i = 0; i < 10; i++)
-        {
-            System.out.println(Arrays.toString(arr10x10));
-        }
+    public static void main(String[] args) {
+        int[][] arr = new int[3][3];
+
+        printArray(arr);
+        arr[0][0] = 1;
+        arr[0][2] = 2;
+        arr[1][0] = 3;
+        printArray(arr);
+
+        arr[1][1] = 5;
+        printArray(arr);
     }
 }
