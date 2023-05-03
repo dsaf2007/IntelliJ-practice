@@ -7,13 +7,10 @@ public class Codeup1620 {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         int result = 0;
-
-
         do {
             result = 0;
-            while (num > 0) {
+            for(;num > 0; num/=10) {
                 result += num % 10;
-                num /= 10;
             }
             num = result;
         }while(num / 10 > 0);
