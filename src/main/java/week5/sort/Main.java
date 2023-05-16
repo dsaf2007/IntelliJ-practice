@@ -2,13 +2,13 @@ package week5.sort;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {11, 9, 8, 1, 3, 5, 6};
+        Integer[] arr = {11, 9, 8, 1, 3, 5, 6};
 
-        InsertSort is = new InsertSort(arr);
+        Sort sorting = new InsertSort(arr);
 
-        is.sort();
-        System.out.println(is.toString());
-        is.sort(false);
-        System.out.println(is.toString());
+        sorting.sort();
+        System.out.println(sorting.toString());
+        sorting.sort(false);
+        System.out.println(sorting.toString());
     }
 }

@@ -2,11 +2,11 @@ package week5.sort;
 
 import java.util.Arrays;
 
-public class InsertSort {
+public class InsertSort<T extends Comparable<T>> implements Sort{
 
-    int[] arr;
+    T[] arr;
 
-    InsertSort(int[] arr){
+    public InsertSort(T[] arr){
         this.arr = arr;
     }
 
@@ -16,9 +16,9 @@ public class InsertSort {
         {
             for(int j = i; j > 0; j--)
             {
-                if(isAscending ? arr[j] < arr[j-1] : arr[j] > arr[j-1])
+                if(isAscending ? arr[j].compareTo(arr[j-1]) < 0: arr[j].compareTo(arr[j-1]) > 0)
                 {
-                    int temp = arr[j];
+                    T temp = arr[j];
                     arr[j] = arr[j - 1];
                     arr[j - 1] = temp;
                 }
