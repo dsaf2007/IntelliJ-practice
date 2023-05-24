@@ -8,7 +8,7 @@ import java.util.Map;
 
 import static java.lang.System.getenv;
 
-public abstract class UserDao {
+public class UserDao {
 
     ConnectionMaker connectionMaker;
 
@@ -51,7 +51,7 @@ public abstract class UserDao {
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         ConnectionMaker cm = new DConnectionMaker();
-        UserDao userDao = new NUserDao(cm);
+        UserDao userDao = new UserDao(cm);
         User user = new User();
         user.setId("3");
         user.setName("kyeongrok");
